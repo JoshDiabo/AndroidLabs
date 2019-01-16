@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/widgets"
+        android:textSize="30dp"
+        android:id="@+id/header"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:text="@string/Button">
+
+    </Button>
+
+    <ImageButton
+        android:layout_width="252dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/header"
+        android:layout_toRightOf="@id/button"
+        android:id="@+id/flag"
+        android:scaleType="fitCenter"
+        android:src="@drawable/flag">
+
+    </ImageButton>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="25dp"
+        android:text="@string/check"
+        android:id="@+id/check">
+    </CheckBox>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flag"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/check"
+        android:text="@string/switch_cap"
+        >
+
+    </Switch>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_hint"
+        android:layout_below="@id/check"
+        android:inputType="textPersonName"
+        >
+    </EditText>
+</RelativeLayout>
